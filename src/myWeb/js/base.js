@@ -82,5 +82,6 @@ $(function(){
          	$li1.appendTo($lglist);
          	$li.appendTo($lglist);
 
+$("#shoppingCart").click(function(){window.open("shoppingCart.html")})
 
 })
