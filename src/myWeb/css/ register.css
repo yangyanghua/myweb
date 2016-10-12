@@ -1,0 +1,28 @@
+@charset "utf-8";
+.yg_logo{overflow: hidden;margin-left: 10px;}
+.yg_logo a{height: 50px;float: left;margin-left: 50px;margin-top: 10px; border-right:1px solid darkgray ;padding-right: 20px;}
+.yg_logo a img{margin-top: 10px;}
+.yg_logo p{font-size: 22px;float: left;padding-left: 20px;margin-top: 20px;}
+#register{width: 100%;height: 555px;background: url(../img/userlogin.jpg) no-repeat ;}
+#register .form{width: 381px;height: 532px;background:white; float: right;margin-top: 20px;margin-right: 120px;}
+#register .form p{ height:45px;width: 250px; margin-top: 25px;margin-left: 65px;}
+#register .form p a{text-decoration: none; display: block; width: 125px;height: 45px;line-height: 45px;text-align: center;font-size: 14px;float: left;}
+#register .form p a.login_a{background: rgb(230,230,230);}
+#register .form p a.register_a{background:#333333;color: white;}
+#register .form form {margin-top: 20px;}
+#register .form #warning{width: 312px;height: 20px;border: 1px solid white;margin-left:30px ;color: red;padding:3px;}
+#register .form form label{ display: block; width: 312px;height: 38px;margin-bottom: 10px;border:1px solid darkgray;margin-left: 30px;}
+#register .form form label select{height: 38px;border: none;}
+#register .form form label select option{border: none;}
+#register .form form input.username{ width: 236px; height: 38px;border: none;}
+#register .form form input.validation{width: 155px;height: 38px;border: none;float: left;}
+#register .form form input.ph_validation{width: 200px;height: 38px;border: none;float: left;}
+#register .form form input.ph_btn{width: 111px;height: 38px;border: none;background: #333333;color: white;}
+#register .form form input.ph_btn:hover{background:#e1373a;}
+#register .form form input.password{width: 312px;height: 38px;margin-bottom: 20px;border:1px solid darkgray;margin-left: 30px;float: left;}
+#register .form form p{width: 312px;overflow: hidden;float: left;margin-left: 30px;padding-left: 30px;}
+#register .form form input.btn{width: 312px;height: 38px;margin-bottom: 20px;border:1px solid darkgray;}
+#register .form form input.btn{font-size: 18px;background:#e1373a;border: none;color: white;}
+#register .form a.forget_a{float: right;margin-right: 50px;padding-bottom: 5px;text-decoration: underline;}
+
+.bottom{padding-top: 20px;}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+.yg_logo{overflow: hidden;margin-left: 10px;}
+.yg_logo a{height: 50px;float: left;margin-left: 120px;margin-top: 10px; padding-right: 20px;}
+.yg_logo a img{margin-top: 10px;}
+.yg_logo p{font-size: 22px;float: left;padding-left: 20px;margin-top: 20px;}
+.yg_logo .location{overflow: hidden;margin-top: 50px;margin-left: 100px;}
+.yg_logo .location li{float: left;background: darkgray;margin-right: 5px;padding: 3px 30px;width: 170px;}
+.yg_logo .location li.active{background:darkorange;}
+.cart_content{width: 1093px;height: 100%;margin-top: 20px;margin-left: 120px;border: 1px solid darkgray;}
+.cart_content .goods-list{padding: 10px;}
+.cart_content .goods-list li{border-bottom: 1px dashed darkgray;margin-bottom: 10px;overflow: hidden;padding-bottom: 20px;}
+.cart_content .goods-list li.no_goods .p1{margin-top: 30px;font-size: 18px;color: gray;margin-bottom: 20px;position: relative;}
+.cart_content .goods-list li.no_goods .p1 span{display: block;width:70px;height: 60px;background: url(img/shopcart-sprite-v4.png) no-repeat -31px -150px;position: absolute;left: 280px ;top:-20px;}
+.cart_content .goods-list li.no_goods .bk_index{display: block;width: 100px;height: 30px;line-height: 30px;text-align: center;font-size: 18px;border: 1px solid darkorange;border-radius:5px;margin-left: 350px;text-decoration: none;margin-bottom: 20px;}
+.cart_content .goods-list li.no_goods .p2{text-align: left;line-height: 20px;margin-left: 350px;}
+.cart_content .goods-list li.no_goods .p2 a{color: royalblue;}
+.cart_content .goods-list li.goods a,.cart_content .goods-list li.goods p{float: left;}
+.cart_content .goods-list li.goods p{margin-left: 180px;}
+.cart_content .goods-list li.goods p.operation{width: 70px;padding: 5px;}
+.cart_content .goods-list li.goods a.goodsimg{margin-left: 20px;padding: 3px;border: 1px solid darkgray;}
+.cart_content .goods-list li.goods a.goodsname{display: block;width:200px;padding: 3px;line-height: 20px;text-align: left;}
+.cart_content .goods-list li.goods input{float: left;}
+.bottom{padding-top: 20px;}
