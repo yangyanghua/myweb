@@ -24,7 +24,7 @@
 		   oLi[i].onmouseover=function(){
 		   
 			bigImg.style.backgroundImage="url(../img/l" + (this.index+1) +".jpg)";
-			lImg.innerHTML="<img src=../img/l"+(this.index+1) +".jpg/>" ;	
+			lImg.innerHTML="<img src='../img/l"+(this.index+1) +".jpg'/>" ;	
 		}
 	}
 	var i=0;
@@ -106,14 +106,22 @@ jQuery(function($){
  					d.setDate(d.getDate() + 10);
  					var str_goods = JSON.stringify(goodsData);
  					document.cookie ="goods="+str_goods;
- 					var goodsList = setCookie("goodsData",goodsData,d);
 
+         	var n=$("#l_img").offset();
+		 	var $l_img = $("#l_img").clone().css("position","absolute").css("z-index","10");
+			var y=$("#shoppingCart").offset().top;
+			var x=$("#shoppingCart").offset().left;		  
+		  $l_img.insertAfter($("#prod-show")).offset(n).animate({
+		   	     width:0,
+		   	     height:0,
+		   	     opacity:0,
+		   	     top:y,
+		   	     left:x
+		   	
+		     },1000);
+
+			
+	
 	})
-	
-	
-	
-	
-	
-	
-	
+
 })

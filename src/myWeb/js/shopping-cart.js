@@ -4,7 +4,7 @@ jQuery(function($){
 		    var $goodsList = $("#cart_content").find(".goods-list");
 		    console.log(goods_list);
 		      
-			if(getCookie("goods")){
+			if(goods_list.length!=0){
               $goodsList.find(".no_goods").hide();
 		    for(var i=0;i<goods_list.length;i++){
 	       
@@ -38,15 +38,15 @@ jQuery(function($){
 		    		 	var $goodsList = $("#cart_content").find(".goods-list");
 		    		 	var $goods_li =$goodsList.find("li");
 		    			var index = $(this).parent("p").parent("li").index(); 
-//		    	     	goodsData = goods_list.splice(index,1)
-// 					 	var d = new Date;
-// 					 	d.setDate(d.getDate() + 10);
-// 					 	var str_goods = JSON.stringify(goodsData);
-// 					 	document.cookie ="goods="+str_goods;
-// 					 	var goods_List = setCookie("goodsData",goodsData,d);
+		    	     	goodsData = goods_list.splice(index,1)
+   					 	var d = new Date;
+   					 	d.setDate(d.getDate() + 10);
+   					 	var str_goods = JSON.stringify(goodsData);
+   					 	document.cookie ="goods="+str_goods;
+   				
 		    		 	$goodsList.find("li:eq("+index+")").remove();
 		    	     
-		    	     	if($goods_li.length==2){
+		    	     	if($goods_li.length==2||goods_list==" "){
 		    	     		$goodsList.find(".no_goods").show();
 		    	     }
 		    	})
