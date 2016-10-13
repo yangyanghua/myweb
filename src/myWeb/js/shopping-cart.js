@@ -1,4 +1,5 @@
 jQuery(function($){
+	        
 	        var goods_list = JSON.parse(getCookie("goods"));  
 
 		    var $goodsList = $("#cart_content").find(".goods-list");

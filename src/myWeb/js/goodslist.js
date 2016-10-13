@@ -23,10 +23,8 @@ jQuery(function($){
 			 $.each(res, function(idx,ele){
  	               var $a1=$("<a/>");
  	               var $a2=$("<a/>");
- 	               $a1.attr("href","#");
- 	               $a1.href="'#'";
- 	               $a2.attr("href","#");
- 	               $a2.href="'#'";
+ 	               $a1.attr("href","goodsdetails.html");
+ 	               $a2.attr("href","goodsdetails.html");
  	              var $span1 =$("<span/>")
  	               $span1.addClass("now_price");
  	              var $span2 =$("<span/>")

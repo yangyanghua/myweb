@@ -5,11 +5,11 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/ register.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
 		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
 		<script type="text/javascript" src="../js/base.js" ></script>
 		<script type="text/javascript" src="../js/basecookie.js" ></script>
-		<script type="text/javascript" src="../js/ register.js" ></script>
+		<script type="text/javascript" src="../js/register.js" ></script>
 	</head>
 	<body>
 	<!--头部开始-->	
@@ -18,8 +18,8 @@
 		<a href="#"class="yg_link_seoul_show">首尔站</a>
 		<a href="#"class="phone"><span class="lf"></span>手机优购<span class="rg"></span></a>
 		<ul class="list1" >
-			<li class="denglu" ><a href="#"style="color: red;" >登录</a></li>
-			<li class="zhuce"><a href="#" style="color: red;" >注册</a></li>
+			<li class="denglu" ><a href="userLogin.html"style="color: red;" >登录</a></li>
+			<li class="zhuce"><a href="register.html" style="color: red;" >注册</a></li>
 			<li class="myyougou" >
 				<a href="#">我的优购<span></span></a>
 				
@@ -57,21 +57,21 @@
 		</div>			
 	</div>
 	<div class="yg_logo">
-		<a href="#"><img src="../img/signin-register-logo.png"/></a>
+		<a href="../index.html"><img src="../img/signin-register-logo.png"/></a>
 		<p>用户注册<p>
 	</div>	
 <!--头部结束-->	
 	<div id="register">
 	 <div class="form">
 	 	<p>
-	 	<a class="login_a" href="#">登录</a>
-	 	<a class="register_a" href="#">注册</a>
+	 	<a class="login_a" href="userLogin.html">登录</a>
+	 	<a class="register_a" href="register.html">注册</a>
 	 	</p>
 	 	<p id="warning"></p>
 	 	<form id="register_information" action="" method="post">
 	 		
 	 		 <label>
-	 		    <select><option>手机号</option><option>邮箱</option></select><input class="username" type="text" placeholder="请输入您的手机号码" /></br>
+	 		   <input class="username" type="text" placeholder="请输入您的手机号码" /></br>
 	 		 </label>
 	 		<label>
 	 			<input class="validation" type="text" name="" id="validation" value="" placeholder="验证码" style="border-right:1px solid darkgray ;" />

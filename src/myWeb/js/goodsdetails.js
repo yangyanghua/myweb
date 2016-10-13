@@ -72,8 +72,16 @@
 		   	
 		}
 jQuery(function($){
-	var goods_list = JSON.parse(getCookie("goods"));
-	$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);	
+         
+			if(document.cookie){
+				  var goods_list = JSON.parse(getCookie("goods"));
+				$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);
+			
+				}
+
+
+
+
 	var $lookli = $("#look_and_see").find(".look-list").find("li");
 	var index=0;
 		$lookli.hide();
