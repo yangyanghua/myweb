@@ -27,9 +27,10 @@ jQuery(function($){
 			}
 			if(flag1&&flag2){
 				window.open("../index.html");
-			}else{
-				return;
 			}
+			//else{
+//				return;
+//			}
 	 	  
 	 })
 	  

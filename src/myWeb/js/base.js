@@ -1,4 +1,8 @@
 $(function(){
+	
+	
+	
+	
 	$("#top_nav").find(".yg_link_seoul_show").hover(function(){
 		$(this).text("Seoul Station").css("fontSize","12px")
 	},function(){$(this).text("首尔站");})
@@ -83,5 +87,11 @@ $(function(){
          	$li.appendTo($lglist);
 
 $("#shoppingCart").click(function(){window.open("shoppingCart.html")})
+
+			if(document.cookie){
+				var goods_list = JSON.parse(getCookie("goods"));
+				$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);
+				}
+
 
 })

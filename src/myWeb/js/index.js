@@ -76,7 +76,8 @@ jQuery(function($){
 			$btn_top.click(function(){
 				$(window).scrollTop(0);
 			})
-          
+			
+$("#shoppingCart").click(function(){window.open("html/shoppingCart.html")})			        
           
           
 

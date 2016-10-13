@@ -105,6 +105,13 @@ jQuery(function($){
 	
 	var $addcart =$("#addCart");
 	var goodsData = [];
+			if(document.cookie){
+				  goodsData = JSON.parse(getCookie("goods"));
+				}else{
+					goodsData = [];
+				}
+	
+	
 	$addcart.click(function(){
 		var name=$("#details_content").find(".txt").find("p").text();
 		var price=$("#details_content").find(".txt").find(".now_price").text();
