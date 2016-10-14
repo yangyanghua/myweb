@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link  rel="shortcut icon" href="../img/favicon.ico"/>	
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goodsdetails.css"/>
+		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/base.js" ></script>
+		<script type="text/javascript" src="../js/basecookie.js" ></script>
+		<script type="text/javascript" src="../js/goodsdetails.js" ></script>
+	</head>
+	<body>
+<!--公共头部开始-->		
+	<div class="top-banner">
+		<a href="#"><img src="../css/img/bg1.jpg"/></a>
+	</div>
+	<div id="top_nav">
+		<a href="#"class="yg_link">时尚商城</a>
+		<a href="#"class="yg_link_seoul_show">首尔站</a>
+		<a href="#"class="phone"><span class="lf"></span>手机优购<span class="rg"></span></a>
+		<ul class="list1" >
+			<li class="denglu" ><a href="userLogin.html"style="color: red;" >登录</a></li>
+			<li class="zhuce"><a href="register.html" style="color: red;" >注册</a></li>
+			<li class="myyougou" >
+				<a href="#">我的优购<span></span></a>
+				
+		        <a id="collect" href="#">我的收藏</a>
+	            	
+			</li>
+			<li class="mydingdan"><a href="#">我的订单</a></li>
+			<li class="gonggao">
+				<a href="#">公告<span></span></a>
+		<div id="notice">
+		<ul class="list2" >
+			<li><a href="#">运动秋季新品直降</a></li>
+			<li><a href="#">分享购官方微信</a></li>
+			<li><a href="#">分享购QQ群518411158</a></li>
+			<li><a href="#">关于跨境商品征税新政策调整</a></li>
+			<li><a href="#">提醒会员谨防炸骗</a></li>
+		</ul>
+	</div>
+				
+			</li>
+			<li class="gengduo">
+				<a href="#">更多<span></span></a>
+			    <div id="more">
+			    	<a href="#">收藏优购</a>
+			    	<a href="#">帮助</a>
+			    </div>
+			
+			</li>
+		</ul>
+	</div>
+	<div id="phone_link_hover">
+			<span class="erweima_download"></span>
+			<a href="#" class="apl_download"></a>
+			<a href="#" class="and_download"></a>
+			<p class="txt"><span class="s">下载安装</span><span class="b">优购客户端</span></p>
+		</div>
+
+ <div id="yg_logo_tab"class="ygwrap">
+ 	<a class="yg_logo"  href="../index.html"><img src="../img/logo_n.jpg"/></a>
+ 	<form id="search_form" class="from1" >
+ 		<input type="text" name="" id="search" class="search_in" value=""  />
+ 		<input type="submit" class="subbtn" value="" />
+ 	</form>
+ 	<ul id="list_nav" class="list3" >
+ 		<li><a href="#" style="color: red;" >热销</a></li>
+ 		<li><a href="#">跑步鞋</a></li>
+ 		<li><a href="#">乐福鞋</a></li>
+ 		<li><a href="#">徒步鞋</a></li>
+ 		<li><a href="#">衬衣</a></li>
+ 		<li><a href="#">T恤</a></li>
+ 		<li><a href="#">小白鞋</a></li>
+ 		<li><a href="#" style="color: red;">2件￥99</a></li>
+ 		<li><a href="#">秋款上新</a></li>
+ 		<li style="border: none;" ><a href="#">专柜同款</a></li>
+ 	</ul>
+ 	<div id="shoppingCart" class="shoppingcart">
+ 		<span class="cart" ></span><p>购物车（<span style="color: red;" class="quantity" >0</span>）件</p><span class="up"></span>
+ 	</div>
+ 	<p class="name">百丽国际旗下购物网站</p>
+ 	<div id="cartContent">
+ 		<ul id="goodslist" >
+ 		  <li style="color: rgb(200,200,200);" >您的购物车中还没有任何商品！</li>
+ 		</ul>
+ 	</div>
+ 	
+ 	
+ </div>
+   <div class="ygwrap_yg_nav" >
+  	<ul class="yg_nav_list">
+  		<li class="bg" ><a href="#"></a></li>
+  		<li><a href="#">运动馆</a></li>
+  		<li><a href="#">户外馆</a></li>
+  		<li><a href="#">鞋靴馆</a></li>
+  		<li><a href="#">母婴馆</a></li>
+  		<li><a href="#">首尔站</a></li>
+  	</ul>
+   <ul class="yg_nav_list_right" >
+   	<li class="red" ><a href="#">分享购</a><span></span></li>
+   	<li><a href="#">秒杀</a></li>
+   	<li><a href="#">聚优购</a></li>
+   </ul>	
+  	
+  	
+  </div>
+
+ </div>
+<!--公共头部结束-->	
+<!--************内容开始**************-->
+<div id="details_content">
+	<div class="top">
+	<div class="now_location">
+	 <ul class="locationlist">
+	 	<li>您当前的位置：</li>
+	 	<li><a href="#">首页</a>></li>
+	 	<li><a href="#">户外运动</a>></li>
+	 	<li><a href="#">运动</a>></li>
+	 	<li><a href="#">运动服</a>></li>
+	 	<li><a href="#">上装</a>></li>
+	 	<li><a href="#">夹克</a>></li>
+	 	<li>CONVERSE/匡威 2016新款女子时尚子系列针织外套10001035035</li>
+	 </ul>	
+	</div>
+	<div id="prod-show">
+			<div id="big_img">	
+			</div>
+			<span id="prod-look" style="left: 10px;top: 10px;" ></span>
+			<div id="l_img">
+		      <img src="../img/l1.jpg" />		
+			</div>
+			<div id="m_img">
+				<ul id="list" >
+					<li><img src="../img/m1.jpg"/></li>
+					<li><img src="../img/m2.jpg"/></li>
+					<li><img src="../img/m3.jpg"/></li>
+					<li><img src="../img/m4.jpg"/></li>
+					<li><img src="../img/m5.jpg"/></li>
+					<li><img src="../img/m6.jpg"/></li>
+				</ul>
+				
+			</div>
+			
+		</div>	
+    <div class="txt" >
+    <p>CONVERSE/匡威 2016新款女子时尚子系列针织外套10001035035	</p>
+    <a class="more" href="#">更多CONVERSE/匡威产品>></a></br>
+    <span class="now_price" >299</span><span class="old_price">￥429</span>
+    <div class="score" >商品评分：<span></span><a href="#">已有（0）人评分</a><a class="hlpe" href="#"><span></span>在线咨询</a></div>
+    </div>    
+	<div id="selector">
+			<from id="prod-form">
+			<div class="row">
+				<div class="header">尺码</div>
+				<div class="detail">
+					
+						<ul class="size" >
+							<li>
+								<label>
+						           S
+						        <input name="size" value="S"  type="radio"  />
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+						           M
+						        <input name="size" value="M" type="radio" />
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+						           L
+						        <input name="size" value="L" type="radio" />
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+						           XL
+						        <input name="size" value="XL" type="radio" />
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+						</ul>
+				</div>
+			</div>
+				<div class="row">
+				<div class="header">颜色</div>
+				<div class="detail">
+                        <ul class="color" >
+							
+							<li>
+								<label>
+						        <img src="../img/s1.jpg"/>
+						        <input name="color"  type="radio"  value="../img/s1.jpg"/>
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+							<li>
+								<label>
+						          <img src="../img/s2.jpg"/>
+						        <input name="color"  type="radio"value="../img/s2.jpg"/>
+						        <span ></span>
+						         <i></i>
+								</label>
+							</li>
+							
+						</ul>
+					
+				</div>
+			</div>
+				<div class="row">
+				<div class="header">数量</div>
+				<div class="detail">
+					<div class="count">
+						<input type="text" name="" id="" value="1" />
+						<ul class="opear">
+							<li id="add" ><span>∧</span></li>
+							<li id="mulp" ><span>∨</span></li>
+						</ul>
+					</div>
+					
+					
+				</div>
+			</div>
+				<div class="row">
+				<div class="detail-btn">
+				<a  class="button" href="#">立即购买</a>
+				<span id="addCart" class="button red" href="#" style="cursor: pointer;" >加入购物车</span>
+				</div>
+				
+			</div>
+			</from>
+			<div class="qr_code">
+				<img src="../img/qr1.jpg" />
+			</div>
+			<div class="end-selector">
+			  <p>本商品由yougou优购直接发货</p>
+			   <ul class="list">
+			   	<li>服务承诺</li>
+			   	<li><span></span><a href="">正品保证</a></li>
+			   	<li><span></span><a href="">10天退换货</a></li>
+			   	<li><span></span><a href="">10天补差价</a></li>
+			   </ul>
+			</div>
+		</div>
+	<div id="look_and_see">
+	<div class="header">
+		 看了又看
+	</div>
+	<div class="looklist">
+		<ul class="look-list">
+			<li>
+				<a href="#"><img src="../img/look1.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look2.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look3.jpg"/><p>匡威￥229</p></a>
+			</li>
+			<li>
+				<a href="#"><img src="../img/look4.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look5.jpg"/><p>匡威￥229</p></a>
+		        <a href="#"><img src="../img/look6.jpg"/><p>匡威￥229</p></a>
+			</li>
+			    <a href="#"><img src="../img/look7.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look8.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look9.jpg"/><p>匡威￥229</p></a>
+			</li>
+		</ul>
+		<span class="top_page" >︿</span>
+		<span class="bot_page" >﹀</span>
+	</div>
+	</div>		
+    </div>	
+    <div id="user_buy">
+		<div class="header">
+			<P>看过本商品的用户最终购买了</P>
+		</div>
+		<div class="list">
+			<ul class="list">
+				<li><a href="#"><img src="../img/buy1.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+				<li><a href="#"><img src="../img/buy2.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+				<li><a href="#"><img src="../img/buy3.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+				<li><a href="#"><img src="../img/buy4.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+				<li><a href="#"><img src="../img/buy5.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+				<li><a href="#"><img src="../img/buy1.jpg"/></a><a href="#">CONVERSE/匡威 2016新款男子时尚子系列针织外套10003122441</a></br><span class="now_price">￥299</span><span class="old_price" >￥429</span></li>
+			</ul>
+		</div>
+		
+	</div>
+    <div id="goods_details" >
+    <div class="header">
+    	<ul class="list">
+    		<li class="red"><a href="#">商品详情</a></li>
+    		<li ><a href="#">商品点评</a></li>
+    		<li ><a href="#">购物保障</a></li>
+    		<li ><a href="#">退换货无忧</a></li>
+    		<li ><a href="#">支付与配送</a></li>
+    		<li ><a href="#">如何保养</a></li>
+    	</ul>
+    </div>	
+    <div class="table">
+       <table class="tab1" border="" cellspacing="" cellpadding="">
+        <tr><td class="hd" >色系：</td><td>灰色</td><td class="hd" >性别：</td><td>女子</td></tr>
+       	<tr><td class="hd">运动款式：</td><td>开衫</td><td class="hd">版型：</td><td >标准</td></tr>
+       	<tr><td class="hd">开扣方式：</td><td>拉链</td><td  class="hd" >运动项目</td><td>休闲</td></tr>
+       	<tr><td class="hd">领型：</td><td>连帽</td><td  class="hd" >风格</td><td>闲心</td></tr>
+       </table>
+       <p>温馨提示：</p>
+       <table class="tab2" border="" cellspacing="" cellpadding="">
+       	<caption>CONVERSE/匡威 女子服装尺码表</caption>
+       	<tr><td>尺码标准</td><td>XS</td><td>S</td><td>M</td><td>L</td><td>XL</td><td>XXL</td><td>XXXL</td></tr>
+        <tr><td>上装型号</td><td>150/76A</td><td>155/80A</td><td>160/84A</td><td>165/88A</td><td>170-92</td><td>175/96A</td><td>180/100B</td></tr>
+        <tr><td>适合胸围（厘米）</td><td>76-78</td><td>80-82</td><td>84-86</td><td>88-90</td><td>92-94</td><td>96-98</td><td>100-102</td></tr>
+        <tr><td>下装号型</td><td>150/60A</td><td>155/62A-155/64A</td><td>160/66A-160/68A</td><td>165/72A-165/74A</td><td>170/76A-170/78A</td><td>175/82A</td><td>180/88B</td></tr>
+        <tr><td>数字码（英寸）</td><td>23</td><td>24-25</td><td>24-25</td><td>26-27</td><td>28-29</td><td>30-31</td><td>34</td></tr>
+        <tr><td>适合腰围（厘米）</td><td>60</td><td>62-64</td><td>62-64</td><td>66-68</td><td>72-74</td><td>76-78</td><td>88-90</td></tr>
+        <tr><td>适合臀围（厘米）</td><td>84</td><td>86-88</td><td>86-88</td><td>90-92</td><td>94-96</td><td>98-100</td><td>106-108</td></tr>
+       </table>   
+    </div>    	
+    <div class="goods_img">
+    	<img src="../img/l0.jpg"/>
+    	<img src="../img/l1.jpg"/>
+    	<img src="../img/l2.jpg"/>
+    	<img src="../img/l3.jpg"/>
+    	<img src="../img/l4.jpg"/>
+    	<img src="../img/l5.jpg"/>
+    	<img src="../img/l6.jpg"/>
+    	<img src="../img/l7.jpg"/>
+        <img src="../img/ppjs_01.jpg"/>
+    </div> 
+    <div class="b_story">
+    	
+    	<p class="title" >品牌故事</p>
+    	
+        <img src="../img/ppjs_02.jpg"/>
+    	<p class="p1" >匡威的历史有百年，1908年匡威先生在美国创立了匡威品牌。最早的一双篮球鞋是在1917年由匡威创作的，1923年匡威成为全世界的篮球鞋的代言词。1936年匡威的篮球鞋成为美国代表队的指定篮球鞋。</p>
+    	<p class="p1">现在匡威已经是NBA的指定用鞋，后来一直演变。随着科技的发展，篮球鞋已经发展到了高科技，过去创作的帆布鞋已经是时尚人士喜欢的品牌。</p>
+    </div>
+    <div class="idea">
+    <p class="title" >品牌故事</p>
+    <img src="../img/ppjs_03.jpg" />
+    <p class="p2">Marquis Mills Converse在美国马萨诸塞州创建了一家专门生产运动鞋的厂家，并以自己的姓氏Converse（匡威）命名。</p>
+    <p class="p2">1917年正式推出了ALL STAR帆布鞋，以其狂放不羁的设计，风靡全球一炮而红。1923年以具有运动天赋和口才的篮球明星CHVCK TAYLOR的亲笔签名成为著名商标。1923年匡威成为全世界的篮球鞋的代言词。匡威始终以“创意至上、颠覆有理”为诉求，集复古、流行、环保于一身，是美国文化的精神象征，以其随心所欲，自由自在没有约束的穿着形态，更成为追求自我时尚的青年人的忠实拍档。</p>
+    <p class="p2">CONVERSE缔造了全球的帆布鞋王国。匡威品牌透过它经典和时尚的味道，作为一种自我实现，近年推出了“BE A STAR”的概念，含义是希望每个人在自己的舞台上展现自我，实现自我，这就是匡威过去百年实现的文化。</p>
+    </div>
+    <div class="shop">
+    	<p class="title">线下实体店</p>
+    	<img src="../img/ppjs_04.jpg"/>
+    </div>
+    </div>
+    
+    <div id="like">
+	<p class="title">猜你喜欢</p>
+	<div class="likelist">
+		<ul class="like-list">
+			<li>
+				<a href="#"><img src="../img/look1.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look2.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look3.jpg"/><p>匡威￥229</p></a>
+			</li>
+			<li>
+				<a href="#"><img src="../img/look4.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look5.jpg"/><p>匡威￥229</p></a>
+		        <a href="#"><img src="../img/look6.jpg"/><p>匡威￥229</p></a>
+			</li>
+			    <a href="#"><img src="../img/look7.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look8.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look9.jpg"/><p>匡威￥229</p></a>
+			</li>
+	</ul>
+	</div>    	
+    <p class="title">购买了该商品的用户还购买了</p>
+	<div class="likelist">
+		<ul class="like-list">
+			<li>
+				<a href="#"><img src="../img/look1.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look2.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look3.jpg"/><p>匡威￥229</p></a>
+			</li>
+			<li>
+				<a href="#"><img src="../img/look4.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look5.jpg"/><p>匡威￥229</p></a>
+		        <a href="#"><img src="../img/look6.jpg"/><p>匡威￥229</p></a>
+			</li>
+			    <a href="#"><img src="../img/look7.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look8.jpg"/><p>匡威￥229</p></a>
+			    <a href="#"><img src="../img/look9.jpg"/><p>匡威￥229</p></a>
+			</li>
+	</ul>
+	</div>
+     <p class="title">匡威</p>
+    <div class="kuangwei">
+     1908年由美国摩尔·匡威于麻省春田市创办了篮球鞋的专业制造厂,CONVERALLSTAR于是就诞生了。1917年正式推出了ALLSTAR帆布鞋,风靡全球一炮而红。是美国文化的精神象征,以其随心所欲,自由自在没有约束的穿着形态,更成为追求自我时尚的青年人的忠实排挡。在中国市场,现在上市的有ALLSTARCHUCKTAYLOR(全明星经典帆布鞋)、JACKPURCELL(开口笑)、PROSTAR(古典帆布鞋)三大系列。关键词：convers2016新款匡威休闲鞋、匡威帆布鞋、匡威运动服——【匡威官网专卖店】converse匡威官方旗舰店_2016新款匡威帆布鞋|休闲鞋|运动鞋专柜正品折扣店-优购网	
+    </div>  
+    </div>
+    <div id="comment">
+    	<div class="title1">
+    		<p class="title">商品点评</p>
+    	           购买过该商品的用户才能进行评论
+    	</div>
+    	
+    	<div class="comment">
+    		<ul>
+    			<li>该商品暂无评论。</li>
+    		</ul>
+    	</div>
+    </div> 
+	<div id="news">
+		<div class="zhanshi">
+		 <p class="title" >公司展示</p>
+		 <img src="../img/goods_detail_img1.jpg"/>
+		</div>
+		<div class="zhanshi">
+			 <p class="title" >媒体报道</p>
+			 <p>优购从2011年7月上线以来，历时多年的发展，依托百丽国际投资背景，凭借优质、时尚货品资源，新货占比量在70%以上，其快速发展历程也受到来自各大媒体的关注与聚焦。</p>
+			 <img src="../img/danpin_8_1.jpg"/>
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--************内容结束**************-->
+<!--公共尾部开始-->
+<!--优购导购开始-->
+<div id="yg_shoppers" >
+	<div class="title">
+		<p>优购导购</p>
+	</div>
+	<div class="logo">
+	<ul class="lg_list">
+	</ul>
+	<span class="left"><</span>
+	<span class="right">></span>	
+	</div>
+	<div class="base_nav">
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">时尚运动</a></li>
+            <li><a href="#">跑步鞋</a></li>
+            <li><a href="#">板鞋</a></li>
+            <li><a href="#">T恤</a></li>
+            <li><a href="#">POLO</a></li>
+            <li><a href="#">篮球鞋</a></li>
+            <li class=" tail"><a href="#">更多>></a></li>
+		</ul>
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">流行男鞋</a></li>
+            <li><a href="#">凉鞋</a></li>
+            <li><a href="#">乐福鞋</a></li>
+            <li><a href="#">帆布鞋</a></li>
+            <li><a href="#">系带</a></li>
+            <li><a href="#">套脚</a></li>
+           <li class=" tail"><a href="#">更多>></a></li>
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">潮流女鞋</a></li>
+            <li><a href="#">中空凉鞋</a></li>
+            <li><a href="#">镂空</a></li>
+            <li><a href="#">鱼嘴</a></li>
+            <li><a href="#">平底</a></li>
+            <li><a href="#">凉拖</a></li>
+            <li class=" tail"><a href="#">更多>></a></li> 
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">童鞋童装</a></li>
+            <li><a href="#">户外鞋</a></li>
+            <li><a href="#">跑步鞋</a></li>
+            <li><a href="#">板鞋</a></li>
+            <li><a href="#">卫衣</a></li>
+            <li><a href="#">裤装</a></li>
+           <li class=" tail"><a href="#">更多>></a></li>  
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">魅力女装</a></li>
+            <li><a href="#">连衣裙</a></li>
+            <li><a href="#">半身群</a></li>
+            <li><a href="#">衬衫</a></li>
+            <li><a href="#">T恤</a></li>
+            <li><a href="#">短裤</a></li>
+           <li class=" tail"><a href="#">更多>></a></li> 
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">户外休闲</a></li>
+            <li><a href="#">户外鞋靴</a></li>
+            <li><a href="#">冲锋衣</a></li>
+            <li><a href="#">皮肤衣</a></li>
+            <li><a href="#">T恤</a></li>
+            <li><a href="#">裤</a></li>
+           <li class=" tail"><a href="#">更多>></a></li> 
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">精品男装</a></li>
+            <li><a href="#">T恤</a></li>
+            <li><a href="#">衬衫</a></li>
+            <li><a href="#">卫衣</a></li>
+            <li><a href="#">外套</a></li>
+            <li><a href="#">衬衫</a></li>
+            <li><a href="#">牛仔</a></li>
+           <li class=" tail"><a href="#">更多>></a></li>   
+		</ul>		
+		<ul class="nav" >
+			<li class="title_li" ><a href="#">高档箱包</a></li>
+            <li><a href="#">单肩背包</a></li>
+            <li><a href="#">手提包</a></li>
+            <li><a href="#">双肩包</a></li>
+            <li><a href="#">钱包</a></li>
+            <li><a href="#">手拿</a></li>
+           <li class="tail"><a href="#">更多>></a></li> 
+		</ul>		
+	
+	</div> 
+
+</div>
+
+	
+	
+<!--优购导购结束-->
+<!--尾部开始-->
+<div id="ygtail">
+	<div class="hd">
+		<ul class="hdlist">
+			<li><span class="hd1" ></span><p>正品</p><a href="#">保证</a></li>
+			<li><span class="hd2" ></span><p>10天</p><a href="#">退换货</a></li>
+			<li><span class="hd3" ></span><p>10天调价</p><a href="#">补差价</a></li>
+			<li><span class="hd4" ></span><p>7X24小时</p><a href="#">在线客服</a></li>
+		</ul>
+	</div>
+   <div class="hlpelist">
+   	   <ul class="hplist" >
+   	   	<li class="headli" >新手帮助</li>
+   	   	<li><a href="#">交易条款协议</a></li>
+   	   	<li><a href="#">注册新用户</a></li>
+   	   	<li><a href="#">会员积分详情</a></li>
+   	   </ul>
+   	   <ul class="hplist" >
+   	   	<li class="headli" >购物指南</li>
+   	   	<li><a href="#">订购流程</a></li>
+   	   	<li><a href="#">验货与签收</a></li>
+   	   	<li><a href="#">订单配送查询</a></li>
+   	   </ul>  
+   	   <ul class="hplist" >
+   	   	<li class="headli" >支付/配送</li>
+   	   	<li><a href="#">支付方式</a></li>
+   	   	<li><a href="#">配送方式</a></li>
+   	   	<li><a href="#">配送时间及运费</a></li>
+   	   </ul>   
+   	   <ul class="hplist" >
+   	   	<li class="headli" >售后服务</li>
+   	   	<li><a href="#">退换货政策</a></li>
+   	   	<li><a href="#">退款说明</a></li>
+   	   	<li><a href="#">发票制度</a></li>
+   	   </ul>   
+   	   <ul class="hplist" >
+   	   	<li class="headli" >会员服务</li>
+   	   	<li><a href="#">找回密码</a></li>
+   	   	<li><a href="#">联系我们</a></li>
+   	   </ul>   
+        <ul class="hplist" >
+   	   	<li class="headli" >优购客服</li>
+   	   	<li><a href="#">在线客服</a></li>
+   	   	<li><span>Email:</span><p>service@yougou.com</p></li>
+   	   	<li><span>分享购QQ群：</span><p>518411158</p></li>
+   	   	<li><span>分享购微信号：</span><P>yougoufenxianggou</P></li>
+   	   </ul>  
+      <div class="Qrcode">
+      	<a href="#"><img src="../img/qr1.jpg"/></a>
+      	<p><img src="../img/qr2.jpg"/></p>
+      </div>
+       
+   
+   </div>	
+</div>
+<div id="bottom">
+  	<div class="bot">
+  		<ul class="bot_list">
+  			<li><a href="#">关于优购</a></li>
+  			<li><a href="#">品牌招商</a></li>
+  			<li><a href="#">集团采购</a></li>
+  			<li><a href="#">招贤纳士</a></li>
+  			<li><a href="#">手机优购</a></li>
+  			<li><a href="#">联系我们</a></li>
+  			<li><a href="#">品牌大全</a></li>
+  			<li><a href="#">网站地图</a></li>
+  			<li><a href="#">销售排行</a></li>
+  			<li><a href="#">优购资讯</a></li>
+  			<li><a href="#">网站联盟</a></li>
+  			<li style="border: none;" ><a href="#">友情链接</a></li>
+  		</ul>
+  	</div>
+  	<div class="copyright">
+  		<a class="endlogo" href="#"><img src="../img/endlogo.gif"/></a>
+  		
+  		<p>Copyright © 2011-2016 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证： 粤 B2-20090203 深公网安备：4403101910665  <span class="police" ></span>  粤公网安备 44030502000017号</p>
+        <ul class="endlist">
+        	<li><a href="#"><img src="../img/sm.png"/></a></li>
+        	<li><a href="#"><img src="../img/ebs.png"/></a></li>
+        	<li><a href="#"><img src="../img/ebs-logo.jpg"/></a></li>
+        	<li><a href="#"><img src="../img/beian1.png"/></a></li>
+        	<li><a href="#"><img src="../img/beian2.png"/></a></li>
+        </ul>   	
+  	</div>
+</div>
+ <!--尾部结束--> 
+<!--公共尾部结束-->		
+		
+	</body>
+</html>

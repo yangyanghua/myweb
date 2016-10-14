@@ -1,0 +1,113 @@
+@charset "utf-8";
+body{min-width:800px;  width:auto!important;  width:800px;}
+.top-banner{width: 100%;overflow: hidden;}
+.top-banner a{display: block;width: 100%;height: 100%; overflow: hidden;}
+.top-banner a img{margin-left: -348px;}
+#top_nav{position: relative;height: 34px; background: rgb(230,230,230);box-shadow:0 0 3px #333333;z-index: 10;min-width:700px;width:auto!important;  width:700px;}
+#top_nav a{float: left;width: 100px;height: 34px;line-height: 34px;font-size: 14px;text-align: center;text-decoration: none;}
+.yg_link{margin-left: 10px;background: white;font-weight: 800;}
+.yg_link_seoul_show:hover{color: white;}
+.yg_link_seoul_show{background:#B90000;color: white;font-weight: 800;}
+.phone{text-align: left;border-right: 1px solid rgb(210,210,210);font-weight: 800;z-index: 120;}
+.phone .rg{float:right;width: 10px;height: 10px;background: url(img/sf-ico.png) no-repeat -127px -302px;margin-top: 10px;} 
+.phone .lf{float: left; display: block;width: 10px;height: 15px;background: url(img/sf-ico.png) no-repeat -152px -78px;margin-left: 10px;margin-top: 9px;}
+#phone_link_hover{position: absolute;background: white; width: 243px;height: 154px;top: 80px;left: 210px;padding: 17px;box-shadow:0 0 5px #333333;z-index:10;display: none;}
+.erweima_download{float: left; display: block;width: 96px;height: 103px;background: url(img/app-rqcode.jpg) no-repeat  2px 3px;}
+.apl_download{float: left; display: block;width: 118px;height: 34px;margin-left: 14px;background: url(img/app-rqcode.jpg) no-repeat -105px -9px;}
+.and_download{float: left; display: block;width: 118px;height: 34px;margin-left: 14px;margin-top: 10px;background: url(img/app-rqcode.jpg) no-repeat  -105px -51px;}
+#phone_link_hover .txt{font-size: 22px;float: left;margin-top: 10px;}
+#phone_link_hover .b{font-weight: 800;}
+#phone_link_hover a:hover{opacity: 0.8;}
+#top_nav .list1{float: right;height: 34px;margin-right: 30px;}
+#top_nav .zhuce a{padding-right: 10px; border-right: 1px solid gray;} 
+#top_nav .list1 li{float: left;padding-left: 10px;padding-right: 10px;height: 34px;}
+#top_nav .list1 li a{ height: 14px;line-height: 14px; font-size: 12px;width: 100%;margin-top: 10px;}
+#top_nav .list1 li span{float:right;width: 10px;height: 10px;background: url(img/sf-ico.png) no-repeat -127px -302px;}
+#top_nav .list1 li.myyougou{width: 60px;  margin-left: 10px;overflow: hidden;border: 1px solid rgb(230,230,230);}
+#top_nav .list1 li.myyougou a{display: block;width: 60px;height:20px;}
+#collect{ height: 34px;line-height: 34px;}
+#top_nav .list1 li.myyougou:hover{background: white;height: 68px;border: 1px solid darkgray;}
+#top_nav .list1 li.gonggao{position: relative;border-right: 1px solid rgb(230,230,230);}
+#notice{position: absolute;width: 223px; height: 122px;left: -170px; top:34px;border: 1px solid darkgray;border-top: none;display: none;}
+#top_nav .list1 li.gonggao:hover{background: white;height: 40px;border-right: 1px solid darkgray;}
+#notice{background:white;}
+#notice .list2 li{height: 20px;margin-left: 10px;}
+#top_nav .list1 li.gengduo{position: relative;border-right: 1px solid rgb(230,230,230);}
+#more{position: absolute;width: 93px;height: 64px; border: 1px solid darkgray;border-top: none;right: -1px;top: 34px;display: none;background: white;}
+#top_nav .list1 li.gengduo:hover{height: 40px;;border-right: 1px solid darkgray;background: white;}
+.ygwrap{position:relative; width: 100%;height: 100%;min-width:700px;  width:auto!important;  width:700px;overflow: hidden;}
+.ygwrap .yg_logo{float: left;margin-left: 2%;margin-top: 30px;}
+.from1{position: absolute;left: 35%;top:40px;border: 2px solid #333333;width: 40%;}
+.search_in{border: none;width:70%;height: 33px;float: left;}
+.subbtn{width: 84px;height: 33px;float:right;background: url(img/sf-ico.png) no-repeat -109px -529px;border: none;}
+.list3{position: absolute;left: 35%;top: 90px;}
+.list3 li{float: left;padding:0 5px;border-right:1px solid gray ;}
+.shoppingcart{ cursor: pointer; float:right;width: 146px;height: 33px; margin-right: 1%;margin-top: 40px;border:1px solid darkgray;}
+.name{position: absolute;color: red;right: 1%;top: 90px;font-size: 14px;}
+.shoppingcart .cart{float: left;width: 21px;height: 24px;background: url(img/sf-ico.png) no-repeat -93px -530px;margin-left: 10px;margin-top: 6px;}
+.shoppingcart .up{float: right;width:7px;height: 7px;background: url(img/sf-ico.png) no-repeat  -88px -549px;margin-top: 14px;margin-right: 10px;}
+.shoppingcart p{float: left; height: 33px;line-height: 40px;}
+#cartContent{position: absolute;background: white;width: 330px;box-shadow: 0 0 6px #333333;right: 1%;top: 75px;display: none;z-index: 10;}
+#goodslist{margin-top: 20px;} 
+.ygwrap_yg_nav{ position: relative; border-bottom: 3px solid #333333;overflow: hidden;z-index: 1;}
+.ygwrap_yg_nav .yg_nav_list li{float: left;font-size: 18px;height: 40px;line-height: 40px;padding: 0 5px;font-weight: 700;}
+.ygwrap_yg_nav .yg_nav_list li.bg{width: 200px;background: url(img/sf-ico.png) no-repeat 14px -613px;cursor: pointer;}
+.ygwrap_yg_nav .yg_nav_list li a{text-decoration: none;}
+.ygwrap_yg_nav .yg_nav_list_right{float: right;margin-right: 3%;}
+.ygwrap_yg_nav .yg_nav_list_right li{font-size: 18px;font-weight: 700;height: 40px;line-height: 40px;float: left;padding: 0 5px;} 
+.ygwrap_yg_nav .yg_nav_list_right li a{text-decoration: none;}
+.ygwrap_yg_nav .yg_nav_list_right li.red a{color: red;}
+.ygwrap_yg_nav .yg_nav_list_right li{position: relative;}
+.ygwrap_yg_nav .yg_nav_list_right li.red span{position: absolute; display: block;width: 11px;height: 12px;background: url(img/new-tip.gif) no-repeat 0 0;right: 0;top: 0;}
+/**********公共头部样式**************/
+
+/***********公共尾部样式*************/
+#yg_shoppers{border: 1px solid rgb(230,230,230);position: relative;width: 100%;}
+#yg_shoppers{margin-top: 20px;margin-left: 10px;}
+#yg_shoppers .title{border-bottom: 3px solid #000000;overflow: hidden;}
+#yg_shoppers .title p{float: left; height: 37px;line-height: 37px;font-size: 18px;font-weight: 700;}
+#yg_shoppers .lg_list{width: 1120px;height: 200px;position: relative;top: 20px;left: 100px;}
+#yg_shoppers .lg_list li{width: 1045px;height: 180px;border: 1px solid darkgray;border-right:none ;border-bottom: none;position: absolute;}
+#yg_shoppers .lg_list li p{float: left;border-bottom:1px solid darkgray ; border-right: 1px solid darkgray;margin-left: 1px;}
+#yg_shoppers .logo{position: relative;}
+#yg_shoppers .logo span{display: block;width: 45px;height: 130px;cursor: pointer;position: absolute;font-size: 42px;text-align: center;line-height: 130px;top: 40px;left: 0;}
+#yg_shoppers .logo span.left{left: 40px;}
+#yg_shoppers .logo span.right{left:1200px;}
+
+#yg_shoppers .base_nav{margin-top: 20px;overflow: hidden;margin-left: 103px;}
+#yg_shoppers .nav{width: 460px;height: 45px; float: left;border-bottom: 1px dashed darkgray;margin-right: 80px;}
+#yg_shoppers .nav li{float: left;padding: 0 10px;height: 45px;line-height: 45px;text-align: center;font-size: 14px;}
+#yg_shoppers .nav li.title_li{font-size: 12px;font-weight: 700;}
+#yg_shoppers .nav li.tail{float: right;}
+
+#ygtail{background: rgb(250,250,250);overflow: hidden;}
+#ygtail .hd{margin-top: 10px;margin-left: 10px;}
+#ygtail .hdlist{height: 45px;width: 1250px;border: 1px solid darkgray;}
+#ygtail .hdlist li{float:left;height: 45px;line-height: 45px;padding: 0 30px;font-size: 18px;font-weight: 700;margin-left: 80px;}
+#ygtail .hdlist li span{float: left;width: 35px;height: 32px;margin-top: 5px;}
+#ygtail .hdlist li span.hd1{background: url(img/sf-ico.png) no-repeat 0 -38px;}
+#ygtail .hdlist li span.hd2{background: url(img/sf-ico.png) no-repeat -31px -38px;}
+#ygtail .hdlist li span.hd3{background: url(img/sf-ico.png) no-repeat -65px -38px;}
+#ygtail .hdlist li span.hd4{background: url(img/sf-ico.png) no-repeat -100px -38px;}
+#ygtail .hdlist li p{float: left;color: red;}
+#ygtail .hdlist li a{float: left;}
+
+#ygtail .hlpelist{float: left; overflow: hidden;margin-top: 10px;margin-left: 100px;}
+#ygtail .hlpelist .hplist{float: left;margin-right:40px ;margin-left: 10px;}
+#ygtail .hlpelist .hplist li{text-align: left;margin-bottom: 10px;}
+#ygtail .hlpelist .hplist li.headli{font-weight: 700;}
+#ygtail .hlpelist .hplist li span{float: left;}
+#ygtail .hlpelist .hplist li p{float:left;color: red;}
+#ygtail .hlpelist .Qrcode{float: right;overflow: hidden;}
+#ygtail .hlpelist .Qrcode a{float: left;}
+#ygtail .hlpelist .Qrcode p{float: left;margin-left: 50px;}
+
+#bottom {background: black;overflow: hidden;}
+#bottom .bot_list{float: right;overflow: hidden;margin-top: 5px;}
+#bottom .bot_list li{float: left;padding: 0 5px;border-right:1px solid white ;}
+#bottom .bot_list li a{color: white;}
+#bottom  a.endlogo{float: left;margin-top: 30px;margin-left: 30px;}
+#bottom  p{float: right;color: white;margin-top: 10px;}
+
+#bottom .endlist{float: right;overflow: hidden;margin-top: 10px;}
+ #bottom .endlist li{float: left;margin-right: 20px;}
