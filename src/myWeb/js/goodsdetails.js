@@ -108,16 +108,15 @@ jQuery(function($){
 			if(document.cookie){
 				  goodsData = JSON.parse(getCookie("goods"));
 				}else{
-					goodsData = [];
+				 goodsData = [];	
 				}
 	
-	
-	$addcart.click(function(){
+	    $addcart.click(function(){
 		var name=$("#details_content").find(".txt").find("p").text();
 		var price=$("#details_content").find(".txt").find(".now_price").text();
                var size=$('input:radio[name="size"]:checked').val();
                var img=$('input:radio[name="color"]:checked').val();
-   			goodsData.push({name:name,price:price,size:size,img:img});
+			 goodsData.push({name:name,price:price,size:size,img:img});
  					var d = new Date;
  					d.setDate(d.getDate() + 10);
  					var str_goods = JSON.stringify(goodsData);
@@ -138,7 +137,7 @@ jQuery(function($){
 
 		var goods_list = JSON.parse(getCookie("goods"));
 		$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);
-
+        
 
 
 			

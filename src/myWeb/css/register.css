@@ -15,7 +15,8 @@
 #register .form form label select{height: 38px;border: none;}
 #register .form form label select option{border: none;}
 #register .form form input.username{ width: 236px; height: 38px;border: none;}
-#register .form form input.validation{width: 155px;height: 38px;border: none;float: left;}
+#register .form form input.validation{width: 250px;height: 38px;border: none;float: left;}
+#get_validation{display: block;width: 61px;height: 38px;line-height: 38px;background: darkgray;font-size: 22px;float: left;}
 #register .form form input.ph_validation{width: 200px;height: 38px;border: none;float: left;}
 #register .form form input.ph_btn{width: 111px;height: 38px;border: none;background: #333333;color: white;}
 #register .form form input.ph_btn:hover{background:#e1373a;}

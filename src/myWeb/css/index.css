@@ -101,3 +101,9 @@
 .temai_goods .temai_goods_list li dl dd .now_price{font-weight: 700;color: red;}
 .temai_goods .temai_goods_list li dl dd .old_price{font-weight: 600;color: gray;text-decoration: line-through;}
 
+#fix_div{height: 160px;width: 100%;position: fixed;bottom: 0;left: 0;background: rgba(0,0,0,0.8);z-index: 100;}
+#fix_div img{float: left;}
+#fix_div img.erweima{margin-left: 100px;margin-top: -60px;z-index: 100;}
+#fix_div img.app_btn{margin-left: 150px;margin-top: 50px;}
+#fix_div .er_bg{width: 261px;height: 88px;background: url(../img/erweima-bj.png);position: absolute;top: -87px;left: 590px;z-index: -1;}
+#fix_div .er_bg .btn{float: right;color: white;font-size: 22px;border: none;margin-right: 2px;background: none;cursor: pointer;}

@@ -1,14 +1,21 @@
 jQuery(function($){
+	
+	        if(document.cookie){
 	        
 	        var goods_list = JSON.parse(getCookie("goods"));  
-
+                console.log(goods_list);
 		    var $goodsList = $("#cart_content").find(".goods-list");
-		    console.log(goods_list);
+		    
+		    var total_price =0;
+		   
 		      
 			if(goods_list.length!=0){
+			  $("#price_in_total").show();
               $goodsList.find(".no_goods").hide();
 		    for(var i=0;i<goods_list.length;i++){
-	       
+	            
+	         total_price = total_price+JSON.parse(goods_list[i].price);
+	            
 	       	var $input = $("<input/>").attr("type","checkbox");
 	       	var $aImg =$("<a/>").attr("href","#").addClass("goodsimg");
 	       	var $img =$("<img/>").attr("src",goods_list[i].img);
@@ -33,27 +40,36 @@ jQuery(function($){
 			}else{
 				return
 			}
+			
+			 $("#price_of_all").text(total_price);
+			 console.log(total_price)
             var goodsData = [];  
             var $goods_li =$goodsList.find("li");
 		    	$goods_li.find(".remove").click(function(){
 		    		 	var $goodsList = $("#cart_content").find(".goods-list");
 		    		 	var $goods_li =$goodsList.find("li");
 		    			var index = $(this).parent("p").parent("li").index(); 
-		    	     	goodsData = goods_list.splice(index,1)
+		    	        $goodsList.find("li:eq("+index+")").remove();
    					 	var d = new Date;
    					 	d.setDate(d.getDate() + 10);
-   					 	var str_goods = JSON.stringify(goodsData);
+   					 	var str_goods = JSON.stringify(goods_list.splice(index,1));
    					 	document.cookie ="goods="+str_goods;
-   				
-		    		 	$goodsList.find("li:eq("+index+")").remove();
-		    	     
-		    	     	if($goods_li.length==2||goods_list==" "){
+						if($goods_li.length==2||goods_list==" "){
 		    	     		$goodsList.find(".no_goods").show();
+		    	     		$("#price_in_total").hide();
 		    	     }
+		    	
+		    	
+		    	
+		    	
 		    	})
-		    	   	
-		    	
-		    	
+            
+
+}		    	
+             $("#all").click(function(){
+            	$("#cart_content").find("ul").find("input").attr("checked",true)
+            })        
+
 
 		    
 		    

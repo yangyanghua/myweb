@@ -77,8 +77,15 @@ jQuery(function($){
 				$(window).scrollTop(0);
 			})
 			
-$("#shoppingCart").click(function(){window.open("html/shoppingCart.html")})			        
-          
-          
+       $("#shoppingCart").click(function(){window.open("html/shoppingCart.html")})			        
+       
+       
+       $("#btn_hide").click(function(){
+       	  $("#fix_div").hide();
+       })
+    
+    
+    
+    
 
 });

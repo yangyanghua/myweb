@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>我的购物车</title>
+		<link  rel="shortcut icon" href="../img/favicon.ico"/>	
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/shopping-cart.css"/>
@@ -68,12 +69,13 @@
 <!--购物车内容开始-->
 <div id="cart_content" class="cart_content">
   <ul class="goods-list">
+  	<!--购物车为空时显示-->
   	<li class="no_goods" >
   		<p class="p1" ><span></span>您的购物车中暂无商品，快去选购心爱的商品吧！</p>
   		<a class="bk_index" href="../index.html">回到首页</a>
   		<p class="p2" >您可以：</br>查看<a href="#">我的收藏夹</a></br>查看<a href="#">我已购买的商品</a></p>
   	</li>
-  	<!--<li class="goods" >
+  	<!--<li class="no_goods" >
   		<input type="checkbox" />
   		<a href="#" class="goodsimg" ><img src="../img/m1.jpg"/></a>
   		<a href="#" class="goodsname" >CONVERSE/匡威 2016新款女子时尚子系列针织外套10001035035</a>
@@ -89,6 +91,14 @@
   	
   	
   </ul>	
+  <div class="price_in_total" id="price_in_total" >
+  	 <label class="all" >
+  	 <input type="checkbox" id="all" />全选</label>
+     <a class="go_sp" href="#">继续购物</a>
+     <a class="remove_cart" id="remove_cart" href="#">清空购物车</a>
+     <a href="#" class="go_total" >去结算</a>
+      <p>总计（不含运费）：￥<span id="price_of_all" ></span></p>
+  </div>
 </div>
 
 
