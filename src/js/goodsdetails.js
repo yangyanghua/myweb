@@ -81,13 +81,10 @@
 		}
 jQuery(function($){
          //设置顶部“购物车”商品的个数
-	if(document.cookie){
-		var goods_list = JSON.parse(getCookie("goods"));
+		var goods_list = localStorage.getItem('goodsdata'); //这里得到的有可能为null
+		goods_list = goods_list ? JSON.parse(goods_list) : [];
 		$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);
 			
-		}
-
-
 
     //看了又看 栏商品切换
 	var $lookli = $("#look_and_see").find(".look-list").find("li");
@@ -115,14 +112,8 @@ jQuery(function($){
 	})	
 	//添加购物车
 	var $addcart =$("#addCart");
-	//创建空数组
-	var goodsData = [];
-	//判断cookie是否存在，防止被覆盖
-			if(document.cookie){
-				  goodsData = JSON.parse(getCookie("goods"));
-				}else{
-				 goodsData = [];	
-				}
+	var goodsData = localStorage.getItem('goodsdata'); //这里得到的有可能为null
+	goodsData = goodsData ? JSON.parse(goodsData) : [];
 	//点击加入购物车按钮
 	    $addcart.click(function(){
 	    	//获取商品名字
@@ -135,13 +126,9 @@ jQuery(function($){
         var img=$('input:radio[name="color"]:checked').val();
 	          //创建商品对象并push进数组
 	    goodsData.push({name:name,price:price,size:size,img:img});
- 		    //创建cookie过期时间
- 		var d = new Date;
- 		d.setDate(d.getDate() + 10);
- 			//将数组转换成字符串
- 		var str_goods = JSON.stringify(goodsData);
- 			//设置cookie
- 		document.cookie ="goods="+str_goods;
+
+		//将数组转换成字符串
+		localStorage.setItem('goodsdata', JSON.stringify(goodsData));
 
 		//点击加入购物车 出现的动画效果
 		//获取到动画开始位置
@@ -161,9 +148,10 @@ jQuery(function($){
 		   	
 		     },500);
         
-        //设置顶部购物车显示的商品数
-		var goods_list = JSON.parse(getCookie("goods"));
-		$("#shoppingCart").find("p").find(".quantity").text(goods_list.length);
+        //设置底部购物车显示的商品数
+        
+		var goods_list = JSON.parse(localStorage.getItem('goodsdata'));
+		$("#goods_num").text(goods_list.length);
         
 
 

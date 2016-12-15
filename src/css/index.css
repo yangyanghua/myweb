@@ -24,7 +24,7 @@
 .bd_rel_navlist li dt .lg7{ background: url(img/indexnav2img_01.jpg) no-repeat 2px -2px;}
 .bd_rel_navlist li:hover span.lg7{background: url(img/indexnav2img_01.jpg) no-repeat -53px -2px;}
 
-.nav_img{ position:relative; height: 492px;min-width:1280px;  width:auto!important; width:1280px;}
+.nav_img{ position:relative; height: 492px;min-width:1260px;  width:auto!important; width:1260px;}
 
 #nav_right_fix{position: absolute; width: 43px;height: 342px;right: 30px;top: 100px;z-index: 100;}
 #fix_nav_list{width: 43px;height: 342px;background: url(img/1203.png) no-repeat -32px -15px;} 
@@ -44,7 +44,7 @@
 
 .activity_img{margin-top: 15px;}
 .activity_img a{margin-left: 12px;}
-.activity_img img{width:1260px;}
+.activity_img img{width:1240px;}
 
 
 #goods_directory{width:100%;height: 100%;}

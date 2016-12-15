@@ -1,36 +1,42 @@
 jQuery(function($){
-	        //判断cookie是否存在
-	        if(document.cookie){
-	        	//存在，获取cookie；
-	        var goods_list = JSON.parse(getCookie("goods"));  
+
+			//获取本地存储
+			var goodsData = localStorage.getItem('goodsdata'); //这里得到的有可能为null
+			
+		//	goodsData = goodsData ? JSON.parse(goodsData) : [];        
+	        if(goodsData){
+	        	
+	        	goodsData = JSON.parse(goodsData);
+	        	console.log(goodsData[0]);
                 //获取商品要显示的区域
 		    var $goodsList = $("#cart_content").find(".goods-list");
 		    	//创建价格合计变量
 		    var total_price =0;
-		  		//判断获取到的cookie长度是否为0
-			if(goods_list.length!=0){
+		  		//判断获取到的长度是否为0
+			if(goodsData.length != 0){
+				
 			   //底部合计结算栏显示
 			  $("#price_in_total").show();
 			  //购物车为空时显示的元素隐藏
               $goodsList.find(".no_goods").hide();
-              //遍历cookie
-		    for(var i=0;i<goods_list.length;i++){
+              //遍历
+		    for(var i=0;i<goodsData.length;i++){
 	           //计算总价钱 
-	         total_price = total_price+JSON.parse(goods_list[i].price);
+	         total_price = total_price+JSON.parse(goodsData[i].price);
 	           //创建复选框并添加属性 
 	       	var $input = $("<input/>").attr("type","checkbox");
 	       		//创建放置商品图片的元素
 	       	var $aImg =$("<a/>").attr("href","#").addClass("goodsimg");
 	       		//创建img标签并添加属性值
-	       	var $img =$("<img/>").attr("src",goods_list[i].img);
+	       	var $img =$("<img/>").attr("src",goodsData[i].img);
 	       		//添加到元素a
 	     		$img.appendTo($aImg);
 	     		//创建放置商品信息的a标签并赋值
-	        var $aName =$("<a/>").attr("href","#").addClass("goodsname").html(goods_list[i].name);            	
+	        var $aName =$("<a/>").attr("href","#").addClass("goodsname").html(goodsData[i].name);            	
 				//创建放置商品尺码的p标签并赋值
-			var $pSize = $("<p/>").html("<span>尺码:</span>"+goods_list[i].size)
+			var $pSize = $("<p/>").html("<span>尺码:</span>"+goodsData[i].size)
 				//创建放置商品单价的p标签
-			var $pPrice =  $("<p/>").html("<span>单价:</span>"+goods_list[i].price);
+			var $pPrice =  $("<p/>").html("<span>单价:</span>"+goodsData[i].price);
 				//创建对商品进行操作的p
 			var $pOperation = $("<p/>").addClass("operation");
 				//创建移入收藏夹按钮		
@@ -62,21 +68,32 @@ jQuery(function($){
             var $goods_li =$goodsList.find("li");
                 //点击删除按钮时的函数
 		    	$goods_li.find(".remove").click(function(){
-		    		    //获取到所有的商品li
+		    		   
+						goodsData = localStorage.getItem('goodsdata');
+						goodsData = JSON.parse(goodsData);	
+						 //获取到所有的商品li
 		    		 	var $goodsList = $("#cart_content").find(".goods-list");
 		    		 	var $goods_li =$goodsList.find("li");
 		    		 	//获取当前商品li的下标
 		    			var index = $(this).parent("p").parent("li").index();
+		    			console.log(index);
 		    			//删除指定下标的元素
 		    	        $goodsList.find("li:eq("+index+")").remove();
-		    	        //重新设置cookie
-   					 	var d = new Date;
-   					 	d.setDate(d.getDate() + 10);
-   					 	//删除指定下标的商品对象；并重新赋值给cookie
-   					 	var str_goods = JSON.stringify(goods_list.splice(index,1));
-   					 	document.cookie ="goods="+str_goods;
-   					 	判断购物车是否为空
-						if($goods_li.length==2||goods_list==" "){
+		    	        //重新设置
+   					 	//删除指定下标的商品对象；
+						goodsData.splice(index-1, 1);
+   					 	localStorage.setItem('goodsdata', JSON.stringify(goodsData));
+   					 	//判断购物车是否为空
+						goodsData = localStorage.getItem('goodsdata');
+						goodsData = JSON.parse(goodsData);	
+						console.log(goodsData.length)
+						total_price =0;
+				    for(var i=0;i<goodsData.length;i++){
+			           //计算总价钱 
+			         total_price = total_price+JSON.parse(goodsData[i].price);
+			        }
+				     $("#price_of_all").text(total_price);
+						if(goodsData.length == 0){
 							//为空显示提示购物车为空的元素
 		    	     		$goodsList.find(".no_goods").show();
 		    	     		//结算栏隐藏
