@@ -68,11 +68,7 @@ jQuery(function($){
          		 $p.html("<a href='#'><img src='img/lg"+j+".jpg' /></a>")
          		 $p.appendTo($li);
          	}
-         	for(var i =48;i>=1;i-- ){
-         		var $p=$("<p/>");
-         		 $p.html("<a href='#'><img src='img/lg"+i+".jpg' /></a>")
-         		 $p.appendTo($li1);         		
-         	}
+
          	$li1.appendTo($lglist);
          	$li.appendTo($lglist);
          
@@ -101,11 +97,7 @@ jQuery(function($){
 		//点击顶部“购物车”打开购物车页面
        $("#shoppingCart").click(function(){window.open("html/shoppingCart.html")})			        
        
-       //页面开始时吸附在窗口底部的黑色半透明的部分 即二维码
-       //点击隐藏
-       $("#btn_hide").click(function(){
-       	  $("#fix_div").hide();
-       })
+
     
     
     

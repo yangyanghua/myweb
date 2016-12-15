@@ -4,7 +4,7 @@
 .yg_logo a img{margin-top: 10px;}
 .yg_logo p{font-size: 22px;float: left;padding-left: 20px;margin-top: 20px;}
 .yg_logo .location{overflow: hidden;margin-top: 50px;margin-left: 100px;}
-.yg_logo .location li{float: left;background: darkgray;margin-right: 5px;padding: 3px 30px;width: 170px;}
+.yg_logo .location li{float: left;background: darkgray;margin-right: 5px;padding: 3px 30px;width: 110px;}
 .yg_logo .location li.active{background:darkorange;}
 .cart_content{width: 1093px;height: 100%;margin-top: 20px;margin-left: 120px;border: 1px solid darkgray;}
 .cart_content .goods-list{padding: 10px;height:auto!important;height:400px;min-height:400px;}
