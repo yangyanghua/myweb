@@ -7,7 +7,7 @@
 .yg_logo .location li{float: left;background: darkgray;margin-right: 5px;padding: 3px 30px;width: 170px;}
 .yg_logo .location li.active{background:darkorange;}
 .cart_content{width: 1093px;height: 100%;margin-top: 20px;margin-left: 120px;border: 1px solid darkgray;}
-.cart_content .goods-list{padding: 10px;}
+.cart_content .goods-list{padding: 10px;height:auto!important;height:400px;min-height:400px;}
 .cart_content .goods-list li{border-bottom: 1px dashed darkgray;margin-bottom: 10px;overflow: hidden;padding-bottom: 20px;}
 .cart_content .goods-list li.no_goods .p1{margin-top: 30px;font-size: 18px;color: gray;margin-bottom: 20px;position: relative;}
 .cart_content .goods-list li.no_goods .p1 span{display: block;width:70px;height: 60px;background: url(img/shopcart-sprite-v4.png) no-repeat -31px -150px;position: absolute;left: 260px ;top:-20px;}
